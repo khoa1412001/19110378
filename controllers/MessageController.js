@@ -11,8 +11,7 @@ exports.getDetailID = (req, res) => {
       "<html><body><ul><li>" +
         mygroup.find((item) => item.id === ID).name +
         "</li></ul></body></html>"
-    )
-    .json(mygroup.find((item) => item.id === "id"));
+    );
 };
 exports.getAll = (req, res) => {
   res
